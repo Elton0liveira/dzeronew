@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-color:  #EFEFEF; 
+    font-family: cursive;
+    color: black;
+}
+
+/* *********************** CABEÇALHO *********************** */
+header {
+    height: 84px;
+    background-color: #0C0634;
+}
+.header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.logo{
+    height: 80px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    padding: 30px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    
+    transition: background-color 0.4s;
+}
+
+nav a:hover {
+    background-color: #B0C4DE;
+}
+
+h1 {
+    /* align-self: center; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+fieldset{
+    background-color: #B0C4DE;
+
+    max-width: 500px;
+    text-align: center;
+
+    border-radius: 20px;
+    
+}
+
+#conteudo{
+    max-width: 500px;
+    
+    position: absolute;
+    margin-left: 500px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.campo{
+    padding: 5px 5px 5px 5px;
+    border-radius: 10%;
+}

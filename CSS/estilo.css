@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-color:  #EFEFEF; 
+    font-family: cursive;
+    color: black;
+}
+
+/* *********************** CABEÇALHO *********************** */
+header {
+    height: 84px;
+    background-color: #0C0634;
+}
+.header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.logo{
+    height: 80px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    padding: 30px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    
+    transition: background-color 0.4s;
+}
+
+nav a:hover {
+    background-color: #B0C4DE;
+}
+
+h1 {
+    /* align-self: center; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+
+/* *********************** MAIN *********************** */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 80%;
+    
+    max-width: 1200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+/* section com id conteudo */
+#conteudo {
+    width: 73%;
+    padding-bottom: 30px;
+    background-color: white;
+
+    height: auto;
+}
+
+#conteudo h3{
+    text-align: center;
+    font-size: 28px;
+    color: #0C0634;
+    margin-top: 20px;
+}
+
+#conteudo p{
+    margin-left: 20px;
+    text-align: center;
+}
+
+aside {
+    width: 25%;
+}   
+
+h2 {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    top: 30px;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 380px;
+
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    /* margin: 3px; */
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+
+.manual-btn:hover{
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto1{
+    background-color: #FFF;
+}
+#radio2:checked ~ .navigation-auto .auto2{
+    background-color: #FFF;
+}
+#radio3:checked ~ .navigation-auto .auto3{
+    background-color: #FFF;
+}
+#radio4:checked ~ .navigation-auto .auto4{
+    background-color: #FFF;
+}
+
+
+/* *********************** ASIDE *********************** */
+.aside-box {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.aside-box h3 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #0C0634;
+    background-color: #FFF;
+
+    border-bottom: 1px solid #EFEFEF;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+.consultoria, .treinamento, .certificado{
+    text-decoration: none;
+    color: black;
+}
+
+.trab-conosco , .termos{
+    text-decoration: none;
+    color: #0C0634;
+}
+
+.aside-box form button {
+    background-color: #A6A6A6;
+    border: 1px solid #a6A6A6;
+    padding: 10px;
+    color: #FFFFFF
+}
+
+.aside-box form button i {
+    color: white;
+    font-size: 20px;
+}
+
+.aside-box ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.aside-box ul li {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.aside-box ul li a {
+    text-decoration: none;
+    color: #A6A6A6;
+    /* color: #0C0634; */
+}
+
+.aside-box ul li a:hover {
+    text-decoration: underline;
+}
+
+.aside-box #email-market {
+  width: 90%;
+  max-width: initial;
+  margin-left: auto;  
+  margin-right: auto;  
+}
+
+#conteudo, .aside, .aside-box{
+    border: 2px solid #0C0634;
+}
+
+
+
